@@ -46,10 +46,12 @@ table.brk tr.tot th,table.brk tr.tot td{background:#faf8f1}
 .print-btn{flex:none;border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:9px;
   padding:8px 14px;font:inherit;font-weight:600;font-size:.9rem;cursor:pointer}
 .print-btn:hover{background:#f4f1e8}
-.meta{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:12px;padding:9px 14px;background:#f4f1e8;
-  border:1px solid var(--line);border-radius:9px;font-size:.86rem;color:#5a5648}
+.meta{margin-top:12px;padding:9px 14px;background:#f4f1e8;border:1px solid var(--line);
+  border-radius:9px;font-size:.86rem;color:#5a5648;line-height:1.55}
 .meta b{color:var(--ink);font-weight:600}
-.meta .src{font-variant-numeric:tabular-nums}
+.meta div{margin:1px 0}
+.countdown-line{font-family:Fraunces,Georgia,serif;font-size:1.02rem;font-weight:600;color:#b45f3f;margin:3px 0 5px}
+.countdown-line b{color:#8f3f22}
 .foot{margin-top:28px;padding-top:12px;border-top:1px solid var(--line);color:var(--muted);font-size:.82rem}
 .foot b{color:var(--ink);font-weight:600}
 /* print: show both tabs, drop controls, keep colors */
@@ -67,14 +69,14 @@ table.brk tr.tot th,table.brk tr.tot td{background:#faf8f1}
   <div class="head-row">
     <div>
       <h1>F26 Enrollment Pace vs Prior Years</h1>
-      <div class="subtitle">F26 as of <b>June 30, 2026</b> &middot; 59 days before term start &middot; compared to prior falls at the same days-out</div>
+      <div class="countdown-line">Fall 2026 starts <b>August 28, 2026</b> &middot; <b>55 days to go</b></div>
+      <div class="subtitle">Data as of <b>June 30, 2026</b> &middot; prior falls compared at the same stage (59 days before term start)</div>
     </div>
     <button class="print-btn" type="button" onclick="window.print()" aria-label="Print or save as PDF">&#128424;&nbsp;Print</button>
   </div>
   <div class="meta">
-    <span><b>Refreshed</b> Jul 04, 2026 10:11</span>
-    <span><b>Data as of</b> June 30, 2026</span>
-    <span class="src"><b>Sources</b> F26←HCCMaster; F25←HCCMaster; F24←HCCWarehouse &middot; F26 count &amp; breakdowns ← OMNI daily file</span>
+    <div><b>Dashboard generated on:</b> 7/4/2026, time: 12:30</div>
+    <div><b>Sources:</b> IRDB, dly_ira_term_enrlmt_dly_omni, last refreshed: 7/2/2026; i805 extracts, last refreshed: 7/1/2026</div>
   </div>
 </header>
 <div class="tabs">
